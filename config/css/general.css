@@ -1,0 +1,87 @@
+/***************************************************************************************
+ *   	Frédéric DANIAU
+ *                Projet :   La Petite Ebénisterie en Herbe 'lPEeh'
+ *                  Page :   general.css
+ *                Chemin :   lPEeh/config/css/general.css
+ *                  Type :   feuille de style en cascade
+ *              Contexte :   css 3.0
+ *              Fonction :   défintion des styles d'affihage
+ *   Date mise en oeuvre :   10/04/2020
+ *          Dernière MàJ :   10/04/2020
+ ****************************************************************************************/
+/*
+Palette
+
+*/
+ /***** ***** ***** Containers ***** ***** *****/
+ #site-container{
+	opacity: 0.9;
+    background-color: transparent;
+    -webkit-font-smoothing: antialiased;
+	-webkit-box-shadow: 6px 4px 12px #000000;
+	-moz-box-shadow: 6px 4px 12px #000000;
+	box-shadow: 6px 4px 12px #000000;
+	border-left: 1px outset #000000;
+	border-top: 1px outset #000000;
+	border-bottom: 1px inset #444444;
+}
+/***** ***** ***** Webfonts ***** ***** *****/
+@font-face{
+	font-family: "2Dumb";
+	src: url('../fonts/2dumb_regular/2Dumb-webfont.eot') format('eot'),
+		 url('../fonts/2dumb_regular/2Dumb-webfont.woff') format('woff'),
+		 url('../fonts/2dumb_regular/2Dumb-webfont.ttf') format('truetype'),
+		 url('../fonts/2dumb_regular/2Dumb-webfont.svg') format('svg');
+}
+/***** ***** ***** Balises HTML ***** ***** *****/
+body{
+	-webkit-font-smoothing: antialiased;
+	background-color: #101010;
+}
+
+}
+a:hover{
+
+}
+/***** ***** ***** Titrages HTML ***** ***** *****/
+h1,h2,h3,h4{
+	background-color: transparent;
+}
+h1,h1 a{
+
+}
+h2,h2 a{
+
+}
+h3,h3 a{
+
+}
+h4,h4 a{
+
+}
+h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
+
+}
+/***** ***** ***** En-tête graphique ***** ***** *****/
+
+/***** ***** ***** ***** ***** ***** ***** ***** *****/
+/* * *** ***** ***** Media queries ***** ***** *** * */
+/***** ***** ***** ***** ***** ***** ***** ***** *****/
+/* *** *** *** Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	
+}
+/* *** *** *** Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	
+}
+/* *** *** *** Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	
+}
+/* *** *** *** Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	
+}
+/* Extra large devices (large desktops)
+   No media query since the extra-large breakpoint has no upper bound on its width */
