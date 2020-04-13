@@ -7,7 +7,7 @@
  *              Contexte :   css 3.0
  *              Fonction :   défintion des styles d'affihage
  *   Date mise en oeuvre :   10/04/2020
- *          Dernière MàJ :   10/04/2020
+ *          Dernière MàJ :   13/04/2020
  ****************************************************************************************/
 /*
 Palette
@@ -15,30 +15,27 @@ Palette
 */
  /***** ***** ***** Containers ***** ***** *****/
  #site-container{
-	opacity: 0.9;
+	opacity: 1;
     background-color: transparent;
     -webkit-font-smoothing: antialiased;
-	-webkit-box-shadow: 6px 4px 12px #000000;
-	-moz-box-shadow: 6px 4px 12px #000000;
-	box-shadow: 6px 4px 12px #000000;
-	border-left: 1px outset #000000;
-	border-top: 1px outset #000000;
-	border-bottom: 1px inset #444444;
+	margin: 10px;
+	padding: 10px;
 }
 /***** ***** ***** Webfonts ***** ***** *****/
 @font-face{
-	font-family: "2Dumb";
-	src: url('../fonts/2dumb_regular/2Dumb-webfont.eot') format('eot'),
-		 url('../fonts/2dumb_regular/2Dumb-webfont.woff') format('woff'),
-		 url('../fonts/2dumb_regular/2Dumb-webfont.ttf') format('truetype'),
-		 url('../fonts/2dumb_regular/2Dumb-webfont.svg') format('svg');
+	font-family: "Calistoga";
+	src: url('../fonts/calistoga/calistoga-regular-webfont.eot') format('eot'),
+		 url('../fonts/calistoga/calistoga-regular-webfont.woff') format('woff'),
+		 url('../fonts/calistoga/calistoga-regular-webfont.ttf') format('truetype'),
+		 url('../fonts/calistoga/calistoga-regular-webfont.svg') format('svg');
 }
 /***** ***** ***** Balises HTML ***** ***** *****/
 body{
 	-webkit-font-smoothing: antialiased;
+	background-image: url("../../media/pics/wood_04.jpg");
+	background-repeat: repeat-y;
+	background-size: cover;
 	background-color: #101010;
-}
-
 }
 a:hover{
 
@@ -63,7 +60,36 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
 
 }
 /***** ***** ***** En-tête graphique ***** ***** *****/
-
+#site-header{
+	opacity: 0.65;
+	background-image: url("../../media//pics/lightwood_02.jpg");
+	background-size: contain;
+	background-repeat: repeat-x;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 10px;
+	background-color: #c99450;
+	color: #000;
+	letter-spacing: 0.15em;
+}
+#site-header img{
+	max-height: 200px;
+}
+#site-title,.header-text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Calistoga";
+	font-variant: small-caps;
+}
+#site-title{
+	font-size: 70px;
+	letter-spacing: 0.1em;
+}
+.header-text{
+	font-size: 40px;
+	letter-spacing: 0.15em;
+}
 /***** ***** ***** ***** ***** ***** ***** ***** *****/
 /* * *** ***** ***** Media queries ***** ***** *** * */
 /***** ***** ***** ***** ***** ***** ***** ***** *****/
