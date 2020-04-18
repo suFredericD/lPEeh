@@ -21,7 +21,7 @@ function fct_DisplayFooterHtml($objPageSelf){
 <!-- -- -- -- -- -- -- -- Pied de page HTML -- -- -- -- -- -- -- -->
     <footer class="site-container">
         <div class="row">
-            <div id="copyright" class="col-xl-12">La petite ébébnisterie en herbe &copy; 2020</div>
+            <div id="copyright" class="col-xl-12">La Petite Ebébnisterie en Herbe &copy; 2020</div>
         </div>
     </footer>
 <!-- -- -- -- -- -- -- -- Fin de page -- -- -- -- -- -- -- -->
