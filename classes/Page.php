@@ -8,7 +8,7 @@
  *              Contexte :   php 7.4
  *              Fonction :   page de définition de la classe page
  *   Date mise en oeuvre :   10/04/2020
- *          Dernière MàJ :   10/04/2020
+ *          Dernière MàJ :   11/04/2020
  *******************************************************************************************/
 class Page{
     //  ***** ***** ***** ATTRIBUTS ***** ***** *****// 
@@ -16,8 +16,8 @@ class Page{
 	private $_strTitle;			// Titre de la page
 	private $_strDescription;	// Rôle de la page
 
-	private $_strPath;			// Chemin de la page
 	private $_strIndexPath;		// Chemin vers l'index
+	private $_strViewsPath;		// Chemin vers les pages utilisateur
 
 	private $_strMediaPath;		// Chemin relatif vers media/
 	private $_strPicturesPath;	// Chemin relatif vers media/pics/
@@ -31,17 +31,22 @@ class Page{
     const PAGE_INDEX = "index.php";
 
     //	***** ***** ***** CONSTRUCTEUR ***** ***** ***** //
-    public function __construct($strNewName){
+    public function __construct($strFullName){
+		$arrPagePath = explode("/", $strFullName);
+		$intPagePathCuts = count($arrPagePath)-1;
+		$strNewName = $arrPagePath[$intPagePathCuts];
         $this->setName($strNewName);
         if ($this->getName() == self::PAGE_INDEX){
-            $this->setIndexPath("");
+			$this->setIndexPath("");
+			$this->setViewsPath("views/");
             $this->setMediaPath("media/");
             $this->setPicturesPath("media/pics/");
             $this->setConfigPath("config/");
             $this->setCssPath("config/css/");
             $this->setScriptsPath("scripts/");
         } else {
-            $this->setIndexPath("../");
+			$this->setIndexPath("../");
+			$this->setViewsPath("");
             $this->setMediaPath("../media/");
             $this->setPicturesPath("../media/pics/");
             $this->setConfigPath("../config/");
@@ -59,8 +64,8 @@ class Page{
 	public function setDescription($strNewDescription){     // Rôle de la page
 		$this->_strDescription = $strNewDescription;
     }
-    public function setPath($strNewPath){                   // Chemin de la page
-		$this->_strPath = $strNewPath;
+    public function setViewsPath($strNewPath){              // Chemin de la page
+		$this->_strViewsPath = $strNewPath;
     }
     public function setIndexPath($strNewIndexPath){         // Chemin relatif vers l'index du site
 		$this->_strIndexPath = $strNewIndexPath;
@@ -90,8 +95,8 @@ class Page{
 	public function getDescription(){		// Extraction de la description
 		return $this->_strDescription;
 	}
-	public function getPath(){				// Extraction du chemin
-		return $this->_strPath;
+	public function getViewsPath(){			// Extraction du chemin
+		return $this->_strViewsPath;
 	}
 	public function getIndexPath(){			// Extraction du chemin vers l'index
 		return $this->_strIndexPath;
