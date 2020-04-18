@@ -19,6 +19,7 @@ spl_autoload_register('LoadClass');                 // Enregistrement de la fonc
 require_once('scripts/paging/headerHtml.php');      // Script de construction du header html
 require_once('scripts/paging/footerHtml.php');      // Script de construction du footer html
 require_once('scripts/paging/siteHeader.php');      // Script de construction du cartouche d'en-tête du site
+require_once('scripts/paging/mainMenu.php');        // Script de construction du menu principal du site
 
 /*** *** *** *** *** INITIALISATIONS ET INSTANCIATIONS *** *** *** *** ***/
 $objPageSelf = new Page($_SERVER['SCRIPT_NAME']);
@@ -28,4 +29,14 @@ fct_DisplayHeaderHtml($objPageSelf);          // Header Html
 
 fct_DisplaySiteHeader($objPageSelf);          // Cartouche d'en-tête du site
 
+fct_DisplayMainMenu($objPageSelf);            // Menu principal
+
+?>
+<!-- -- -- Image d'accueil -- -- -->
+      <div class="row">
+        <div id="divbigtree" class="col-xl-12">
+          <img class="img-fluid" src="media/pics/big_tree.png">
+        </div>
+      </div>
+<?php
 fct_DisplayFooterHtml($objPageSelf);          // Footer Html
