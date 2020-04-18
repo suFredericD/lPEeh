@@ -8,7 +8,7 @@
  *              Contexte :   php 7.4
  *              Fonction :   page de définition de la classe page
  *   Date mise en oeuvre :   10/04/2020
- *          Dernière MàJ :   11/04/2020
+ *          Dernière MàJ :   18/04/2020
  *******************************************************************************************/
 class Page{
     //  ***** ***** ***** ATTRIBUTS ***** ***** *****// 
