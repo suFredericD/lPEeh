@@ -7,7 +7,7 @@
  *              Contexte :   css 3.0
  *              Fonction :   défintion des styles d'affihage
  *   Date mise en oeuvre :   10/04/2020
- *          Dernière MàJ :   13/04/2020
+ *          Dernière MàJ :   18/04/2020
  ****************************************************************************************/
 /*
 Palette
@@ -36,7 +36,6 @@ html{
 body{
 	min-height: 100%;
 	position: relative;
-	padding-bottom: 100px;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
@@ -45,24 +44,38 @@ body{
 	background-size: cover;
 	background-color: #101010;
 }
-a:hover{
-
-}
 footer{
 	opacity: 0.65;
-	height: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-image: url("../../media//pics/lightwood_02.jpg");
 	background-size: contain;
 	background-repeat: repeat-x;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-top: 20px;
+	margin-left: 15%;
 	padding: 10px;
 	color: #000;
 	position: absolute;
 	bottom: 0;
+	width: 70%;
+	font-family: "Calistoga";
+}
+a{
+	color: #000;
+	text-shadow: 2px 2px #A4762C;
+	text-decoration: none;
+	transition-property: all;
+	-moz-transition-property: all;
+	-webkit-transition-property: all;
+	transition-duration: 1250ms;
+	-moz-transition-duration: 1250ms;
+	-webkit-transition-duration: 1250ms;
+}
+a:hover{
+	color: #6A4200;
+	text-shadow: 2px 3px #000;
+	text-decoration: underline;
 }
 /***** ***** ***** Titrages HTML ***** ***** *****/
 h1,h2,h3,h4{
@@ -92,7 +105,12 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
 	margin-left: 50px;
 	margin-right: 50px;
 	padding: 10px;
+	border-top: 2px outset #000;
+	border-right: 2px outset #000;
+	border-left: 2px outset #000;
+	border-bottom: 1px outset #000;
 	color: #000;
+	text-shadow: 2px 2px #A4762C;
 	letter-spacing: 0.15em;
 }
 #site-header img{
@@ -112,6 +130,46 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
 .header-text{
 	font-size: 40px;
 	letter-spacing: 0.15em;
+}
+/***** ***** ***** Menu principal ***** ***** *****/
+.navbar{
+	opacity: 0.65;
+	background-image: url("../../media//pics/lightwood_02.jpg");
+	background-size: contain;
+	background-repeat: repeat-x;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-top: 1px outset #000;
+	border-right: 2px outset #000;
+	border-left: 2px outset #000;
+	border-bottom: 2px outset #000;
+	font-family: "Calistoga";
+	font-size: 34px;
+	letter-spacing: 0.1em;
+	font-variant: small-caps;
+}
+.nav-item{
+	padding-left: 20px;
+	padding-right: 20px;
+	transition-property: all;
+	-moz-transition-property: all;
+	-webkit-transition-property: all;
+	transition-duration: 1250ms;
+	-moz-transition-duration: 1250ms;
+	-webkit-transition-duration: 1250ms;
+}
+.nav-item:hover{
+	background-color: #A4762C;
+}
+/***** ***** ***** Page : index.php ***** ***** *****/
+#divbigtree{
+	opacity: 0.9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
 }
 /***** ***** ***** ***** ***** ***** ***** ***** *****/
 /* * *** ***** ***** Media queries ***** ***** *** * */
