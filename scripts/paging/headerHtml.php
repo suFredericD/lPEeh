@@ -8,13 +8,13 @@
  *              Contexte :   php 7.4
  *              Fonction :   renvoi de l'en-tête Html
  *   Date mise en oeuvre :   10/04/2020
- *          Dernière MàJ :   11/04/2020
+ *          Dernière MàJ :   26/03/2021
  ****************************************************************************************/
 /*** *** *** *** *** INCLUSIONS *** *** *** *** ***/
 
 /*** *** *** *** *** FONCTIONS *** *** *** *** ***/
 function fct_DisplayHeaderHtml($objPageSelf){
-    $strFavIcon = $objPageSelf->getPicturesPath() . "logo.png";
+    $strFavIcon = $objPageSelf->getPicturesPath() . "logo2.png";
     $strGeneralCss = $objPageSelf->getCssPath() . "general.css";
     $strBootstrapCss = $objPageSelf->getConfigPath() . "bootstrap/css/bootstrap.min.css";
     $strFontawesomeCss = $objPageSelf->getConfigPath() . "fontawesome/css/all.css";

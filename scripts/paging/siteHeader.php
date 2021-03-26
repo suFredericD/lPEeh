@@ -8,13 +8,13 @@
  *              Contexte :   php 7.4
  *              Fonction :   renvoi du cartouche d'en-tête du site
  *   Date mise en oeuvre :   11/04/2020
- *          Dernière MàJ :   13/04/2020
+ *          Dernière MàJ :   26/03/2021
  ****************************************************************************************/
 /*** *** *** *** *** INCLUSIONS *** *** *** *** ***/
 
 /*** *** *** *** *** FONCTIONS *** *** *** *** ***/
 function fct_DisplaySiteHeader($objPageSelf){
-    $strLogoPath = $objPageSelf->getPicturesPath() . "logo_trans.png";
+    $strLogoPath = $objPageSelf->getPicturesPath() . "logo2.png";
 ?>
         <section id="site-header" class="row">
             <div class="offset-xl-1 col-xl-2">
