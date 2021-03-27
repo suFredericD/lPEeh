@@ -18,6 +18,8 @@ function fct_DisplayHeaderHtml($objPageSelf){
     $strGeneralCss = $objPageSelf->getCssPath() . "general.css";
     $strBootstrapCss = $objPageSelf->getConfigPath() . "bootstrap/css/bootstrap.min.css";
     $strFontawesomeCss = $objPageSelf->getConfigPath() . "fontawesome/css/all.css";
+    $arrNameFile = explode(".", $objPageSelf->getName());
+    $strPageCss = $objPageSelf->getCssPath() . $arrNameFile['0'] . ".css";
 ?>
 <!DOCTYPE html>
 
@@ -42,6 +44,7 @@ function fct_DisplayHeaderHtml($objPageSelf){
         <link href="<?php echo $strBootstrapCss;?>" rel="stylesheet"><!-- Css BootStrap Core -->
         <link href="<?php echo $strFontawesomeCss;?>" rel="stylesheet"><!-- Css FontAwesome Core -->
         <link href="<?php echo $strGeneralCss;?>" rel="stylesheet" type="text/css"><!-- Css général du site -->
+        <link href="<?php echo $strPageCss;?>" rel="stylesheet" type="text/css"><!-- Css spécifique à la page -->
     </head>
 <!-- -- -- -- -- -- -- -- Corps de la page -- -- -- -- -- -- -- -->
     <body id="site-container">
