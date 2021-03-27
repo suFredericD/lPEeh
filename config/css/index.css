@@ -1,0 +1,125 @@
+/***************************************************************************************
+ *   	Frédéric DANIAU
+ *                Projet :   La Petite Ebénisterie en Herbe 'lPEeh'
+ *                  Page :   index.css
+ *                Chemin :   lPEeh/config/css/index.css
+ *                  Type :   feuille de style en cascade
+ *              Contexte :   css 3.0
+ *              Fonction :   défintion des styles d'affichage de la page d'accueil
+ *   Date mise en oeuvre :   26/03/2021
+ *          Dernière MàJ :   26/03/2021
+ ****************************************************************************************/
+/*
+Palette
+
+*/
+ /***** ***** ***** Containers ***** ***** *****/
+#divbigtree{
+	opacity: 0.9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.accFiches{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 5px #BBB;
+	box-ra
+}
+.accFicheTitle{
+	opacity: 0.85;
+	background-image: url("../../media//pics/lightwood_02.jpg");
+	background-size: contain;
+	background-repeat: repeat-x;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px inset #000;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	text-align: center;
+}
+.accFicheText{
+	opacity: 0.85;
+	background-image: url("../../media//pics/wood_02.jpg");
+	background-size: cover;
+	background-repeat: repeat-y;
+	border: 1px inset #000;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	padding: 10px 25px 20px 25px;
+	font-family: "Acme";
+	font-size: 22px;
+	color: #EEE;
+	text-align: justify;
+	text-shadow: 2px 1px 1px #000;
+}
+/***** ***** ***** Balises HTML ***** ***** *****/
+em{
+	color: #D39520;
+	font-style: normal;
+	text-shadow: 3px 3px 2px #000;
+}
+strong{
+	color: #75AD41;
+	font-style: italic;
+	text-shadow: 3px 3px 2px #000;
+}
+/***** ***** ***** Liens HTML ***** ***** *****/
+.accFicheLink{
+	opacity: 0.85;
+	padding: 2px 20px 2px 20px;
+	border-radius: 30px;
+	font-family: "2Dumb";
+	font-size: 50px;
+	font-weight: 900;
+	color: #000;
+	text-shadow: 2px 2px 5px #75AD41;
+	transition-property: all;
+	-moz-transition-property: all;
+	-webkit-transition-property: all;
+	transition-duration: 1250ms;
+	-moz-transition-duration: 1250ms;
+	-webkit-transition-duration: 1250ms;
+}
+.accFicheLink:hover{
+	opacity: 0.7;
+	background-color: #A4762C;
+	color: #75AD41;
+	text-shadow: 6px 6px 6px #000;
+	text-decoration: none;
+}
+/***** ***** ***** Titrags, sous-titrages ***** ***** *****/
+.accFicheSubtitle{
+	margin-top: 15px;
+	font-family: "BrushStrokePlain";
+	font-size: 22px;
+	color: #D39520;
+	text-align: center;
+	text-decoration: underline;
+	text-shadow: 2px 1px 1px #000;
+}
+
+/***** ***** ***** ***** ***** ***** ***** ***** *****/
+/* * *** ***** ***** Media queries ***** ***** *** * */
+/***** ***** ***** ***** ***** ***** ***** ***** *****/
+/* *** *** *** Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	
+}
+/* *** *** *** Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	
+}
+/* *** *** *** Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	
+}
+/* *** *** *** Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	
+}
+/* Extra large devices (large desktops)
+   No media query since the extra-large breakpoint has no upper bound on its width */

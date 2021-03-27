@@ -5,9 +5,9 @@
  *                Chemin :   lPEeh/config/css/general.css
  *                  Type :   feuille de style en cascade
  *              Contexte :   css 3.0
- *              Fonction :   défintion des styles d'affihage
+ *              Fonction :   défintion des styles d'affichage
  *   Date mise en oeuvre :   10/04/2020
- *          Dernière MàJ :   18/04/2020
+ *          Dernière MàJ :   26/03/2021
  ****************************************************************************************/
 /*
 Palette
@@ -23,11 +23,32 @@ Palette
 }
 /***** ***** ***** Webfonts ***** ***** *****/
 @font-face{
+	font-family: "2Dumb";
+	src: url('../fonts/2dumb_regular/2Dumb-webfont.eot') format('eot'),
+		 url('../fonts/2dumb_regular/2Dumb-webfont.woff') format('woff'),
+		 url('../fonts/2dumb_regular/2Dumb-webfont.ttf') format('truetype'),
+		 url('../fonts/2dumb_regular/2Dumb-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Acme";
+	src: url('../fonts/acme_regular/Acme-Regular-webfont.eot') format('eot'),
+		 url('../fonts/acme_regular/Acme-Regular-webfont.woff') format('woff'),
+		 url('../fonts/acme_regular/Acme-Regular-webfont.ttf') format('truetype'),
+		 url('../fonts/acme_regular/Acme-Regular-webfont.svg') format('svg');
+}
+@font-face{
 	font-family: "Calistoga";
 	src: url('../fonts/calistoga/calistoga-regular-webfont.eot') format('eot'),
 		 url('../fonts/calistoga/calistoga-regular-webfont.woff') format('woff'),
 		 url('../fonts/calistoga/calistoga-regular-webfont.ttf') format('truetype'),
 		 url('../fonts/calistoga/calistoga-regular-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "BrushStrokePlain";
+	src: url('../fonts/brushstrokeplain_plain/BRUSHSTP-webfont.eot') format('eot'),
+		 url('../fonts/brushstrokeplain_plain/BRUSHSTP-webfont.woff') format('woff'),
+		 url('../fonts/brushstrokeplain_plain/BRUSHSTP-webfont.ttf') format('truetype'),
+		 url('../fonts/brushstrokeplain_plain/BRUSHSTP-webfont.svg') format('svg');
 }
 /***** ***** ***** Balises HTML ***** ***** *****/
 html{
@@ -73,7 +94,7 @@ a{
 	-webkit-transition-duration: 1250ms;
 }
 a:hover{
-	color: #6A4200;
+	color: #75AD41;
 	text-shadow: 2px 3px #000;
 	text-decoration: underline;
 }
@@ -109,6 +130,7 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
 	border-right: 2px outset #000;
 	border-left: 2px outset #000;
 	border-bottom: 1px outset #000;
+	border-radius: 50px;
 	color: #000;
 	text-shadow: 2px 2px #A4762C;
 	letter-spacing: 0.15em;
@@ -134,9 +156,10 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
 /***** ***** ***** Menu principal ***** ***** *****/
 .navbar{
 	opacity: 0.65;
-	background-image: url("../../media//pics/lightwood_02.jpg");
-	background-size: contain;
-	background-repeat: repeat-x;
+	background-image: url("../../media//pics/lightwood_01.jpeg");
+	background-size: cover;
+	background-repeat: repeat-y;
+	margin-top: 10px;
 	margin-left: 50px;
 	margin-right: 50px;
 	margin-bottom: 20px;
@@ -145,6 +168,7 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
 	border-right: 2px outset #000;
 	border-left: 2px outset #000;
 	border-bottom: 2px outset #000;
+	border-radius: 35px;
 	font-family: "Calistoga";
 	font-size: 34px;
 	letter-spacing: 0.1em;
@@ -153,6 +177,7 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
 .nav-item{
 	padding-left: 20px;
 	padding-right: 20px;
+	border-radius: 35px;
 	transition-property: all;
 	-moz-transition-property: all;
 	-webkit-transition-property: all;
@@ -163,14 +188,7 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
 .nav-item:hover{
 	background-color: #A4762C;
 }
-/***** ***** ***** Page : index.php ***** ***** *****/
-#divbigtree{
-	opacity: 0.9;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 50px;
-}
+
 /***** ***** ***** ***** ***** ***** ***** ***** *****/
 /* * *** ***** ***** Media queries ***** ***** *** * */
 /***** ***** ***** ***** ***** ***** ***** ***** *****/
